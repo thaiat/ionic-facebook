@@ -4,6 +4,9 @@ This is a show case for building a simple mobile facebook like application
 ![ionic-fb1](https://cloud.githubusercontent.com/assets/4806944/4914108/a29674cc-64bd-11e4-80cf-8b9ea5d8705a.png)  ![ionic-fb2](https://cloud.githubusercontent.com/assets/4806944/4914112/a7585ef8-64bd-11e4-935f-c9f133634e2b.png)
 
 
+This app was build using generator-angular-famous-ionic (https://www.npmjs.org/package/generator-angular-famous-ionic).
+
+
 ## Install
 ```
 npm install
@@ -40,10 +43,6 @@ Run
 gulp karma
 ```
 
-## Changelog
 
-Recent changes can be viewed on Github on the [Releases Page](https://github.com//workspace/releases)
-
-## License
 
 
