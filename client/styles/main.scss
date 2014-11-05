@@ -1,0 +1,61 @@
+@import "../../bower_components/ionic/scss/ionic.scss";
+@import "../../bower_components/font-awesome/scss/font-awesome.scss";
+
+$fb_blue:               #3b5998 !default;
+$fb_medium_blue:        #6d84b4 !default;
+$fb_lighter_blue:       #afbdd4 !default;
+$fb_lightest_blue:      #d8dfea !default;
+
+ion-nav-view {
+    background-color: transparent !important;
+}
+
+.item-divider {
+    color:gray;
+}
+
+.fblogin {
+    background-color:$fb_blue !important;
+}
+
+.fb-button-login {
+    background-color:rgb(80,107,161) !important;
+    border-color:rgb(80,107,161) !important;
+    color:white !important;
+    top:100px;
+}
+
+.fbnews .tab-item {
+  color: gray !important; }
+
+.fbnews .tab-item-active {
+  color: rgb(91,147,252) !important; }
+
+.fbsearch input {
+  background-color: transparent;
+  color: white; }
+
+.fbsearch {
+  background-color: #31487C;
+}
+
+.bar-fb-blue {
+    background-color: #4c6ba4 !important;
+}
+
+.small-font {
+    font-size:13px !important;
+    color:#6A6A74 !important;
+}
+
+.gray-background {
+    background-color: rgb(210, 213, 218);
+}
+.padding {
+    color:gray;
+}
+
+.rounded-image {
+    border-radius:50%;
+    border:3px $fb_blue solid;
+}

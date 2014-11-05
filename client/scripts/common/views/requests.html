@@ -1,0 +1,21 @@
+<ion-view>
+    <ion-header-bar class="bar bar-positive bar-fb-blue">
+        <h1 class="title">Friends Requests</h1>
+    </ion-header-bar>
+    <ion-content>
+
+        <ion-list ng-repeat="item in vm.friends">
+            <ion-item class="item-thumbnail-left">
+                <img ng-src="https://graph.facebook.com/{{ item.id }}/picture?width=120&height=120" class="rounded-image"/>
+                <h2>{{item.name}}</h2>
+                <p>1 mutual friend</p>
+                <div class="button-bar">
+                    <button class="button button-positive button-small" >Confirm</button>
+                    <button class="button button-light button-small " style="margin-left:10px">Not Now</button>
+                </div>
+
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>

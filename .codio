@@ -1,0 +1,16 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+        "Node version": "node --version",
+        "Npm clean cache": "npm cache clean",
+        "Disk space": "df -h | grep xvdc | head -1"
+  },
+
+// Preview button configuration
+  "preview": {
+	  	"Code coverage": "https://{{domain}}/coverage/PhantomJS%2B1.9.7%2B(Linux)/lcov-report/",
+        "Launch application": "https://{{domain}}:9500/"
+  }
+}

@@ -1,0 +1,78 @@
+<ion-view class="gray-background">
+
+    <!--     HEADER (SEARCH) -->
+    <ion-header-bar class="bar-positive bar-fb-blue">
+        <div class="item-input-wrapper fbsearch">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input type="search" placeholder="Search">
+        </div>
+        <button class="button button-clear" ng-click="vm.logout()">
+            <i class="icon ion-navicon"></i>
+        </button>
+    </ion-header-bar>
+
+    <!--     SUB HEADER  -->
+    <ion-header-bar class="bar-subheader bar-stable">
+        <div class="button-bar">
+            <button class="button button-clear small-font">
+                <i class="icon ion-compose"></i>
+                Status
+            </button>
+            <button class="button button-clear small-font">
+                <i class="icon ion-camera"></i>
+                Photo
+            </button>
+            <button class="button button-clear small-font">
+                <i class="icon ion-location"></i>
+                Check in
+            </button>
+        </div>
+    </ion-header-bar>
+
+    <!--     CONTENT -->
+    <ion-content>
+
+        <ion-refresher  on-refresh="vm.doRefresh()" refreshing-icon="">
+        </ion-refresher>
+        <div class="list card fbcard" ng-repeat="item in vm.items">
+
+            <div class="item item-avatar">
+                <img ng-src="https://graph.facebook.com/{{ item.from.id }}/picture" />
+                <h2>{{item.from.name}}</h2>
+                <p>{{item.created_time | date:'MMM d, y h:mma'}}</p>
+            </div>
+            <div class="item item-body">
+                <p ng-if="item.story">{{item.story}}</p>
+                <p>{{item.message}}</p>
+                <p ng-if="item.name">{{item.name}}</p>
+                <p ng-if="item.description">{{item.description}}</p>
+                <img ng-if="item.full_picture" ng-src="{{ item.full_picture }}" style="width:100%; box-shadow:5px 5px 5px grey" />
+            </div>
+            <a class="item" ng-if="item.likes || item.comments">
+
+                <h4>
+                    <span ng-if="item.likes" class="padding">{{item.likes.data.length}} Likes</span>
+                    <span ng-if="item.comments" class="padding">{{item.comments.data.length}} Comments</span>
+                </h4>
+            </a>
+
+            <div class="item positive" style="padding:0;background-color:#F7F7F7">
+                <div class="button-bar bar-positive positive">
+                    <button class="button button-light button-clear small-font">
+                        <i class="icon ion-thumbsup"></i>
+                        Like
+                    </button>
+                    <button class="button button-light button-clear small-font">
+                        <i class="icon ion-chatbox"></i>
+                        Comment
+                    </button>
+                    <button class="button button-light button-clear small-font">
+                        <i class="icon ion-share"></i>
+                        Share
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>
