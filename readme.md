@@ -1,6 +1,5 @@
 # Ionic Facebook like application
 This is a show case for building a simple mobile facebook like application
-Effort | User Story
 
 ![ionic-fb1](https://cloud.githubusercontent.com/assets/4806944/4914108/a29674cc-64bd-11e4-80cf-8b9ea5d8705a.png)  ![ionic-fb2](https://cloud.githubusercontent.com/assets/4806944/4914112/a7585ef8-64bd-11e4-935f-c9f133634e2b.png)
 
