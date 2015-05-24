@@ -7,6 +7,12 @@ This is a show case for building a simple mobile facebook like application
 This app was built using generator-angular-famous-ionic (https://www.npmjs.org/package/generator-angular-famous-ionic).   
 It uses browserify to bundle the file together. For more info see the github repo https://github.com/thaiat/generator-angular-famous-ionic.
 
+
+
+See it in action here:   
+[![Building a native like interface with Ionic](http://img.youtube.com/vi/EgRh09CO_rk/0.jpg)](http://www.youtube.com/watch?v=EgRh09CO_rk)
+
+
 ## Install
 ```
 npm install
