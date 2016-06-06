@@ -5,6 +5,7 @@
     "prepublish": "bash ./bin/prepublish.sh",
     "test": "gulp test"
   },
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "brfs": "^1.2.0",
